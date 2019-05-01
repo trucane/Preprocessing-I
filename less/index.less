@@ -55,6 +55,190 @@ table {
 
 html, body {
 	height: 100%;
-	background: red;
 }
+
+
+// less variables start here
+
+@main-bg-color: rgb(153, 153, 167);
+@smoke-gray: #F5F5F5;
+@gray92: #EAEAEA;
+@slateblue: slateblue;
+@mustard: #EEC900;
+
+
+
+
+html{
+	scroll-behavior: smooth;
+}
+
+// mixins here
+
+.flex{
+	display:flex;
+}
+
+.font{
+	font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+
+
+
+.container{
+	width:70%;
+	margin:0 auto;
+}
+
+.header{
+	.flex();
+	align-items:center;
+	justify-content: space-between;
+	border-radius:5px;
+	margin-bottom:10px;
+	background:@mustard;
+	color:navy;
+
+	nav{
+		.flex();
+		width:70%;
+		justify-content: space-around;
+
+		a{
+			text-decoration:none;
+			font-size:1.2em;
+			color:navy;
+			padding:5px;
+		}
+
+		a:hover{
+			color:white;
+		}
+	}
+
+	h1{
+		.font();
+		padding:20px;
+	}
+}
+
+.name-cont{
+	margin-right:25px;
+	width:55%;
+	h2{
+		font-size:1.2em;
+		margin-bottom:10px;
+	}
+	p:nth-child(2){
+		.font();
+		font-size:2em;
+		color:@mustard;
+		margin-bottom:10px;
+	}
+
+	p:nth-child(3){
+		font-size:1.5em;
+		color:#6B6B6B;
+		font-weight:strong;
+		margin-bottom:25px;
+	}
+
+	p:nth-child(4){
+		font-size:1em;
+		margin-bottom:25px;
+		color:#6B6B6B;
+	}
+
+	button{
+		color:white;
+		font-weight: bolder;
+		background:navy;
+		border:1px inset silver;
+		font-size:1.2em;
+		border-radius:10px;
+		padding:5px 15px;
+	}
+}
+
+#about-sec{
+	background:@mustard;
+	.flex();
+	justify-content: center;
+	align-items: baseline;
+	margin:0 auto;
+	padding:100px;
+	color:white;
+}
+
+
+#img-sec{
+	.flex();
+	justify-content: center;
+	align-items: center;
+	margin:0 auto;
+}
+
+.about-cont{
+	width:40%;
+	text-align:center;
+
+	h2{
+		font-size: 1.5em;
+		margin-bottom:10px;
+	}
+
+	p{
+	.font();
+	font-size:1.7em;	
+	}
+}
+
+.about-content{
+	width:60%;
+	padding:20px;
+}
+
+.image-cont{
+	width:45%;
+	img{
+		height:70vh;
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+}
+
+#customers {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	margin:30px 0px;;
+	border:1px solid black;
+
+	td, th {
+		border: 1px solid #ddd;
+		padding: 15px;
+	  }
+	tr:nth-child(even){background-color: lightgray;}
+	tr{
+		color:#6B6B6B;
+	}
+	tr:hover {
+		background-color:navy;
+		color:@mustard;
+	}
+
+	th {
+	.font();
+	  padding:12px;
+	  text-align: left;
+	  background-color: navy;
+	  color:@mustard;
+	}
+  }
+  
+  
+  
+  
 
