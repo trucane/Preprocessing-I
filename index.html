@@ -7,6 +7,8 @@
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +16,191 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <header class="header">
+        <h1>Dj CatNap</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#">Events</a>
+        <a href="#">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="img-sec">
+      <div class="name-cont">
+        
+        <h2>Hello this is </h2>
+        <p>DJ <strong>CatNap</strong></p>
+        <p>I am a DJ / Promoter</p>
+        <p>
+          The party Stops when all the catnip is gone. And "whoever
+          let the dogs out" puts them back in.
+        </p>
+        <button>Book Me</button>
+      </div>
+
+      <div class="image-cont">
+        <img src="image/cat_face.jpg" alt="">
+      </div>
+    </section>
+
+
+    <section id="about-sec">
+      <div class="about-cont">
+        <h2>About Me</h2>
+        <p>DJ CatNap</p>
+      </div>
+      <div class="about-content">
+        <p id="about">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Illo ducimus exercitationem eveniet neque, aut molestiae 
+          harum cumque aperiam sapiente cum quos, necessitatibus 
+          sequi, quia accusantium iusto et possimus dolore rerum? 
+          Voluptas dolores nisi vel, corporis nemo perferendis ullam 
+          incidunt minus nesciunt dolore. Alias voluptas similique 
+          veritatis repellendus quis assumenda officiis!
+        </p>
+      </div>
+    </section>
+
+    <section id="skill-section">
+      <div class="skill-sec">
+        <div class="skill-cont">
+          <h2 class="title">Skills</h2>
+          <ul>
+            <li>Dj</li>
+            <li>Party Planner</li>
+            <li>Event Coordinator</li>
+            <li>Host</li>
+            <li>Promoter</li>
+            <li>Music Producer</li>
+            <li>Mouse Catcher</li>
+            <li>Fluffy Pillow</li>
+          </ul>
+        </div>
+      
+        <table id="customers">
+          <tr>
+            <th>Event</th>
+            <th>Attraction</th>
+            <th>Location</th>
+          </tr>
+          <tr>
+            <td>The Catastrphy Lounge</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Cat Post Pub</td>
+            <td>Christina Berglund</td>
+            <td>Sweden</td>
+          </tr>
+          <tr>
+            <td>Sour Creme and Milktini </td>
+            <td>Taylor Swift</td>
+            <td>Mexico</td>
+          </tr>
+          <tr>
+            <td>Cat Nip Eporium</td>
+            <td>Lance Stevens</td>
+            <td>Austria</td>
+          </tr>
+          <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+          </tr>
+          <tr>
+            <td>The Royal Weddoing</td>
+            <td>Beyonce</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>FurBall Heaven</td>
+            <td>JoJo </td>
+            <td>Canada</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <hr>
+  </div>
+
+  <footer>
+    <h2>Contact</h2>
+    <section id="contact">
+      <div class="message-container">
+        <div class="top-message">
+            <div class="half">
+                <div class="label"><label for="name">Name</label></div>
+                <div class="input"><input type="text"></div>
+              </div>
+      
+          <div class="half">
+            <div class="label"><label for="email">Email</label></div>
+            <div class="input"><input type="text"></div>
+          </div>
+        </div>
+
+        <div class="half">
+            <div class="label"><label for="message">Message</label></div>
+            <div class="textarea">
+              <textarea name="message" id="" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+      </div>
+
+      <div class="info-container">
+        <div class="side">
+
+            <div class="info">
+              <div class="icon">
+                <span><i class="far fa-envelope"></i></span>
+              </div>
+    
+              <div class="details">
+                  <p>
+                    Email<br>
+                    henryleverette@gmail.com
+                  </p>
+              </div>
+            </div>
+
+            <div class="info">
+                <div class="icon">
+                  <span><i class="fas fa-phone"></i></span>
+                </div>
+      
+                <div class="details">
+                    <p>
+                      Phone<br>
+                      1(773) 946-3655
+                    </p>
+                </div>
+              </div>
+
+
+              <div class="info">
+                  <div class="icon">
+                    <span><i class="fas fa-home"></i></span>
+                  </div>
+        
+                  <div class="details">
+                      <p>
+                        Address<br>
+                        
+                      </p>
+                  </div>
+                </div>
+              
+              
+        </div>
+      </div>
+    </section>
+    <hr>
+  </footer>
 </body>
 </html>
